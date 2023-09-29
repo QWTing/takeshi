@@ -50,6 +50,10 @@ body {
   margin-bottom: 5px;
   font-size: 14px;
 }
+.content .MenuList p {
+  margin-top: 20px;
+  font-size: 14px;
+}
 
 .products {
   box-sizing: border-box;
