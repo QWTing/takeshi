@@ -71,29 +71,28 @@ fetch(url)
         `
       })
       
-      MenuList.innerHTML += `<br><p>『點選完後，請點選右上角購物車，麻煩請將畫面給工作人員進行點餐』<br><br>『此頁面為輔助點餐，並非正式點餐功能』<br><br>『點餐內容已工作人員pos機裡的為主』</p>`
+      MenuList.innerHTML += `<p>『請勿將畫面重新整理，重新整理會重置』</p><p>『點選完後，請點選右上角購物車，麻煩請將畫面給工作人員進行點餐』<br><br>『此頁面為輔助點餐，並非正式點餐功能』<br><br>『點餐內容已工作人員pos機裡的為主』</p>`
       
       MenuList.innerHTML += `<button type="button" class="btn btn-outline-primary clear" value="clear">清空</button>`
     }
     
     //確定點餐畫面的產品
     function CreateOrderElement(data){
-      const order_box = document.createElement('div')
-      order_box.className = 'order-box'
-      const h4 = document.createElement('h6')
-      h4.textContent = data.cn_name
-      order_box.appendChild(h4)
+      const tr = document.createElement('tr')
+      const cn = document.createElement('td')
+      cn.textContent = data.cn_name
+      tr.appendChild(cn)
 
+      const jp = document.createElement('td')
+      jp.textContent = data.jp_name
+      tr.appendChild(jp)
 
-      const h5 = document.createElement('h6')
-      h5.textContent = data.jp_name
-      order_box.appendChild(h5)
+      const order = document.createElement('td')
+      order.textContent = data.order
+      tr.appendChild(order)
+      
 
-      const p = document.createElement('p')
-      p.textContent = `數量：${data.order}`
-      order_box.appendChild(p)
-
-      return order_box;
+      return tr;
     }
     
 
@@ -132,11 +131,11 @@ fetch(url)
 
     function show_order(){
       let all =  JSON.parse(localStorage.getItem("data"))
-      const modal_body = document.querySelector('.modal-body')
-      modal_body.innerHTML = ''
+      const table_body = document.querySelector('.table-body')
+      table_body.innerHTML = ''
       all.forEach(e=>{
         if(e.order != 0){
-          modal_body.appendChild(CreateOrderElement(e))
+          table_body.appendChild(CreateOrderElement(e))
         }
       })
     }
