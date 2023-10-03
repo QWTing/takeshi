@@ -23,10 +23,10 @@
           </div>
         </li>
         <li class="check">
-          <button type="button" class="btn check-order" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn check-order" data-bs-toggle="modal" data-bs-target="#checkOrder">
             <ion-icon name="cart-outline"></ion-icon>
           </button>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="checkOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
@@ -63,10 +63,28 @@
       </div>
       
       <div class="products col-8">
-        <!-- <div class="product-box">
-          <h5>大根</h5>
+        <div class="product-box">
+          <h5>雞腿</h5>
           <div class="group">
-            <span>300円</span>
+            <div class="item">
+              <span>1078円</span>
+              <button type="button" class="img-btn" data-bs-toggle="modal" data-bs-target="#pic">
+                <ion-icon name="image-outline"></ion-icon>
+              </button>
+              <div class="modal fade" id="pic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./image/img_24.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <select name="" id="">
               <option value="">1</option>
               <option value="">1</option>
@@ -88,7 +106,7 @@
               <option value="">1</option>
             </select>
           </div>
-        </div> -->
+        </div>
         
       </div>
     </div>
