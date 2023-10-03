@@ -35,9 +35,67 @@ fetch(url)
       const group = document.createElement('div')
       group.className = 'group';
 
+      const item = document.createElement('div')
+      item.className = 'item'
+      group.appendChild(item)
+
       const span = document.createElement('span');
       span.textContent = `${Math.floor(product.price*1.1)}円`;
-      group.appendChild(span);
+      item.appendChild(span);
+
+      const imgbtn = document.createElement('button')
+      imgbtn.className = 'img-btn'
+      imgbtn.setAttribute("type","button")
+      imgbtn.setAttribute("data-bs-toggle","modal")
+      imgbtn.setAttribute("data-bs-target",`#pic${product.id}`)
+      item.appendChild(imgbtn)
+
+      const icon = document.createElement('ion-icon')
+      icon.setAttribute("name","image-outline")
+      imgbtn.appendChild(icon)
+
+      const modal = document.createElement('div')
+      modal.classList.add("modal","fade")
+      modal.setAttribute("id",`pic${product.id}`)
+      modal.setAttribute("tabindex","-1")
+      modal.setAttribute("aria-labelledby",product.id)
+      modal.setAttribute("aria-hidden","true")
+      item.appendChild(modal) 
+
+      const modal_dialog = document.createElement('div')
+      modal_dialog.classList.add("modal-dialog","modal-dialog-centered")
+      modal.appendChild(modal_dialog)
+
+      const modal_content = document.createElement('div')
+      modal_content.className = 'modal-content'
+      modal_dialog.appendChild(modal_content)
+      
+      const modal_header = document.createElement('div')
+      modal_header.className = 'modal-header'
+      modal_content.appendChild(modal_header)
+      
+      
+      const title = document.createElement('h5')
+      title.className = 'modal-title'
+      title.setAttribute('id',product.id)
+      title.textContent = product.cn_name
+      modal_header.appendChild(title)
+      
+      const close_btn = document.createElement('button')
+      close_btn.className = 'btn-close'
+      close_btn.setAttribute('type','button')
+      close_btn.setAttribute('data-bs-dismiss','modal')
+      close_btn.setAttribute('aria-label',"Close")
+      modal_header.appendChild(close_btn)
+      
+
+      const img = document.createElement('img')
+      img.setAttribute('src',`./image/img_${product.id}.jpeg`)
+      modal_content.appendChild(img)
+      const body = document.createElement('div')
+      body.className = 'modal-body'
+      modal_content.appendChild(body)
+
 
       const select = document.createElement('select');
       select.name = product.id
