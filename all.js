@@ -89,12 +89,15 @@ fetch(url)
       modal_header.appendChild(close_btn)
       
 
+      
+      const modal_body = document.createElement('div')
+      modal_body.className = 'modal-body'
+      modal_content.appendChild(modal_body)
+      
       const img = document.createElement('img')
       img.setAttribute('src',`./image/img_${product.id}.jpeg`)
-      modal_content.appendChild(img)
-      const body = document.createElement('div')
-      body.className = 'modal-body'
-      modal_content.appendChild(body)
+      modal_body.appendChild(img)
+      
 
 
       const select = document.createElement('select');
@@ -152,8 +155,6 @@ fetch(url)
 
       return tr;
     }
-    
-
 
     const MenuList = document.querySelector('.MenuList')
     const product_list = document.querySelector('.products')
