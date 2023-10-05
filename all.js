@@ -95,7 +95,7 @@ fetch(url)
       modal_content.appendChild(modal_body)
       
       const img = document.createElement('img')
-      img.setAttribute('src',`./image/img_${product.id}.jpeg`)
+      img.setAttribute('src',`./image/img_${product.id}.JPG`)
       modal_body.appendChild(img)
       
 
