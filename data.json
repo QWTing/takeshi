@@ -450,7 +450,7 @@
         "en": "Chicken Soup"
     },
     {
-        "id": 32,
+        "id": 33,
         "group": "otsumami",
         "cn_group": null,
         "jp_name": "たこ刺し",
@@ -1184,19 +1184,5 @@
         "cn": "特別菜單",
         "en": "special menu"
     },
-    {
-        "id": 136,
-        "group": "special",
-        "cn_group": null,
-        "jp_name": "白子ボン酢",
-        "cn_name": "白子醋浸",
-        "en_name": "Milt Ponzu",
-        "en_content": "Milt Ponzu is a Japanese delicacy consisting of fish milt (sperm sacs) served with a citrus-based soy sauce called ponzu. It's known for its creamy texture and tangy flavor.",
-        "price": 880,
-        "order": 0,
-        "category_id": 12,
-        "jp": "special",
-        "cn": "特別菜單",
-        "en": "special menu"
-    }
+    
 ]
