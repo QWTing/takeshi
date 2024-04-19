@@ -285,21 +285,6 @@
         "en": "Fish and sauce Soup"
     },
     {
-        "id": 21,
-        "group": "agotashi_list",
-        "cn_group": null,
-        "jp_name": "揚げ出し",
-        "cn_name": "蔬菜天婦羅",
-        "en_name": "AGEDASHI",
-        "en_content": "",
-        "price": 240,
-        "order": 0,
-        "category_id": 1,
-        "jp": "agotashi_list",
-        "cn": "海鮮關東煮",
-        "en": "Fish and sauce Soup"
-    },
-    {
         "id": 22,
         "group": "toridashi",
         "cn_group": null,
