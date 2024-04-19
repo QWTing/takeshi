@@ -420,21 +420,6 @@
         "en": "Chicken Soup"
     },
     {
-        "id": 30,
-        "group": "toridashi",
-        "cn_group": null,
-        "jp_name": "えのきバター",
-        "cn_name": "金针菇奶油",
-        "en_name": "Enoki Mushrooms with Butter",
-        "en_content": "Enoki Mushrooms with Butter is a dish where enoki mushrooms are sautéed in butter, often seasoned with soy sauce, resulting in a rich and flavorful side dish.",
-        "price": 220,
-        "order": 0,
-        "category_id": 2,
-        "jp": "toridashi",
-        "cn": "雞湯關東煮",
-        "en": "Chicken Soup"
-    },
-    {
         "id": 31,
         "group": "toridashi",
         "cn_group": null,
@@ -698,21 +683,6 @@
         "en_name": "Octopus cut into chunks",
         "en_content": "'たこぶつ盛り' (Tako-butsu Mori) is an octopus sashimi platter.",
         "price": 580,
-        "order": 0,
-        "category_id": 6,
-        "jp": "sasimi",
-        "cn": "生魚片",
-        "en": "Sashimi"
-    },
-    {
-        "id": 67,
-        "group": "sasimi",
-        "cn_group": null,
-        "jp_name": "本まぐろぶつ盛り",
-        "cn_name": "本鲔魚拼盘",
-        "en_name": "Tuna cut into chunks",
-        "en_content": "'本まぐろぶつ盛り' (Hon Maguro-butsu Mori) is a bluefin tuna sashimi platter.",
-        "price": 900,
         "order": 0,
         "category_id": 6,
         "jp": "sasimi",
